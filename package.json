@@ -1,0 +1,35 @@
+{
+  "name": "webdriverio-ui-test",
+  "version": "1.0.0",
+  "description": "Sample project to demonstrate Web UI test automation using WebDriverIO and Page Objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio wdio.conf.js",
+    "allureGenerate": "allure generate allure-results --clean",
+    "allureOpen": "allure open"
+  },
+  "keywords": [
+    "webdriverio",
+    "ui",
+    "automation"
+  ],
+  "author": "Osanda Deshan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "@wdio/allure-reporter": "^6.6.0",
+    "@wdio/cli": "^6.6.0",
+    "@wdio/local-runner": "^6.6.0",
+    "@wdio/mocha-framework": "^6.6.0",
+    "@wdio/spec-reporter": "^6.6.0",
+    "@wdio/sync": "^6.6.0",
+    "chromedriver": "^85.0.0",
+    "wdio-chromedriver-service": "^6.0.4"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.13.0"
+  }
+}
