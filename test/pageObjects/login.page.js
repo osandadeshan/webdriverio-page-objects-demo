@@ -1,28 +1,26 @@
 import Page from "./page";
 
 class LoginPage extends Page {
+    get emailField() { return $('#email');}
+    get passwordField() { return $('#passwd');}
+    get signInBtn() { return $('#SubmitLogin');}
+    get authenticationErrorDiv() {return $("//div[@class='alert alert-danger']//li");}
 
-    get userNameTextBox() { return  $('#username'); }
-    get passwordTextBox() { return $('#password') }
-    get submitButton() { return $('button[type="submit"]') }
-    get errorLabel() { return $('#flash') }
-
-    open() {
-        super.open('/login');
+    open(){
+        super.open('/index.php?controller=authentication&back=my-account');
     }
 
-    setUsername(username) {
-        this.userNameTextBox.setValue(username);
+    setEmail(email){
+        this.emailField.setValue(email);
     }
 
-    setPassword(password) {
-        this.passwordTextBox.setValue(password);
+    setPassword(password){
+        this.passwordField.setValue(password);
     }
 
-    clickSubmitButton() {
-        this.submitButton.click();
+    clickSignIn(){
+        this.signInBtn.click();
     }
-
 }
 
 export default new LoginPage();

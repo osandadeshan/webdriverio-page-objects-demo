@@ -1,26 +1,25 @@
 {
-  "name": "webdriverio-ui-test",
+  "name": "webdriverio-page-objects-demo",
   "version": "1.0.0",
-  "description": "Sample project to demonstrate Web UI test automation using WebDriverIO and Page Objects",
+  "description": "A sample project to demonstrate page object pattern using WebDriverIO",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio wdio.conf.js",
-    "allureGenerate": "allure generate allure-results --clean",
-    "allureOpen": "allure open"
+    "test": "npx wdio run wdio.conf.js",
+    "generate-report": "allure generate ./allure-results --clean && allure open",
+    "testDev": "node -v"
   },
   "keywords": [
     "webdriverio",
-    "ui",
-    "automation"
+    "page-objects"
   ],
-  "author": "Osanda Deshan",
+  "author": "Osanda Nimalarathna",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/register": "^7.11.5",
-    "@wdio/allure-reporter": "^6.6.0",
+    "@wdio/allure-reporter": "^6.6.6",
     "@wdio/cli": "^6.6.0",
     "@wdio/local-runner": "^6.6.0",
     "@wdio/mocha-framework": "^6.6.0",
@@ -30,6 +29,6 @@
     "wdio-chromedriver-service": "^6.0.4"
   },
   "dependencies": {
-    "allure-commandline": "^2.13.0"
+    "wdio-video-reporter": "^3.1.1"
   }
 }
