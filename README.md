@@ -13,12 +13,12 @@ WebDriverIO is Javascript based test automation framework built over nodeJs. It 
 3. [Allure](https://docs.qameta.io/allure/#_installing_a_commandline)
 
 **Steps:**
-1. Clone this project
-2. Open the project in VSCode
-3. Open the terminal in VSCode
-4. Execute ***`npm install`*** to install the node modules
-5. Execute ***`npm test`*** to run the tests
-6. Execute ***`npm generate-report`*** to generate allure report with videos attached in failure tests
+1. Clone this project.
+2. Open the project in VSCode.
+3. Open the terminal in VSCode.
+4. Execute ***`npm install`*** to install the node modules.
+5. Execute ***`npm test`*** to run the tests.
+6. Execute ***`npm generate-report`*** to generate allure report with videos attached in failure tests.
 
 ## References
 * [WebDriverIO Official Documentation](https://webdriver.io/docs/gettingstarted.html)
