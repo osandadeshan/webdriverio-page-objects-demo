@@ -19,3 +19,6 @@ WebdriverIO is Javascript based test automation framework built over nodeJs. It 
 4. Execute ***`npm install`*** to install the node modules
 5. Execute ***`npm test`*** to run the tests
 6. Execute ***`npm generate-report`*** to generate allure report with videos attached in failure tests
+
+## References
+[WebDriverIO Official Documentation](https://webdriver.io/docs/gettingstarted.html)
