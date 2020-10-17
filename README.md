@@ -21,4 +21,4 @@ WebDriverIO is Javascript based test automation framework built over nodeJs. It 
 6. Execute ***`npm generate-report`*** to generate allure report with videos attached in failure tests
 
 ## References
-[WebDriverIO Official Documentation](https://webdriver.io/docs/gettingstarted.html)
+* [WebDriverIO Official Documentation](https://webdriver.io/docs/gettingstarted.html)
