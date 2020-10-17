@@ -15,7 +15,6 @@ describe('Login test suite', () => {
         LoginPage.open();
         LoginFunctions.login('osanda@mailinator.com', '1qaz2wsx');
         expect(LoginPage.authenticationErrorDiv).toBeExisting();
-        expect(LoginPage.authenticationErrorDiv).toHaveTextContaining('Authentication notfailed.');
+        expect(LoginPage.authenticationErrorDiv).toHaveTextContaining('Authentication success.');
     });
 });
-
